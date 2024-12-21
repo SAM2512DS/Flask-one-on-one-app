@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>THYROID PREDICTION </title>
+</head>
+
+    <body class="main" style= "background-image: url(static/bga.jpg)";>
+
+
+        <center style="margin-top:250px; color: white;"  >
+            <h1 style="font-size: 30px;
+                       text-decoration: underline;"> YOUR PREDICTION </h1>
+    
+   <h2> Thyroid disease is a general term for a medical condition that keeps your thyroid from making the right amount of hormones.<br> It can affect people of all ages.
+
+Your thyroid is a small, butterfly-shaped gland located at the front of your neck under your skin.<br> It’s a part of your endocrine system and controls many of your body’s important functions by producing and releasing thyroid hormones, like thyroxine (T4) and triiodothyronine (T3).
+
+<br> thyroid’s main job is to control the speed of your metabolism (metabolic rate).<br> This is the process of how your body transforms the food you consume into energy. All the cells in your body need energy to function.<br> When your thyroid isn’t working properly, it can impact your entire body.</h2>
+    
+{% if data == 0 %}
+<h1>Happy to say that your values are Normal</h1>
+
+{% elif data == 1 %}
+<h1>Your Values shows that paitent has Hypothyroidism</h1>
+
+{% else %}
+<h1>Your values has error in prediction</h1>
+{% endif %}
+</center>
+</body>
+</html>
